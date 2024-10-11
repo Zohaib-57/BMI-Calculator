@@ -10,4 +10,20 @@ function calculateBMI(){
         alert('Please fill in all the fields.');
         return;
     }
+                // Calculating the BMI
+                const bmi = (weight / (height * height)).toFixed(2);
+
+                // Showcaing the BMI category
+                let category;
+                if (bmi < 18.5) {
+                    category = 'Underweight';
+                } else if (bmi >= 18.5 && bmi <= 24.9) {
+                    category = 'Normal weight';
+                } else if (bmi >= 25 && bmi <= 29.9) {
+                    category = 'Overweight';
+                } else {
+                    category = 'Obese';
+                }
+    
+    
 }
