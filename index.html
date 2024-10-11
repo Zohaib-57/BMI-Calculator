@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BMI-calcuator</title>
+    <title>BMI-calculator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="container">
-        <h2>BMI--Calculator</h2>
+        <h2>BMI Calculator</h2>
         <div id="intro-section">
-            <input type="text" id="intro" placeholder="enter name"><br>
-            <input type="text" id="intro" placeholder="enter age">
+            <input type="text" id="name" placeholder="Enter name"><br>
+            <input type="text" id="age" placeholder="Enter age">
         </div>
 
         <div id="input-values">
-            Height:
-            <input type="text" class="value">
-            Weight:
-            <input type="text" class="value">
+            Height (cm):
+            <input type="number" id="height" class="value" placeholder="cm">
+            Weight (kg):
+            <input type="number" id="weight" class="value" placeholder="kg">
         </div>
+        <div id="btn">
+            <button onclick="calculateBMI()">Calculate BMI</button>
+        </div>
+
         <div id="output">
-            <p id="output">...</p>
-            <p id="output">...</p>
-            <p id="output">...</p>
+            <p id="result-name">Name: ...</p>
+            <p id="result-bmi">BMI: ...</p>
+            <p id="result-category">Category: ...</p>
         </div>
     </div>
-</body>
-</html>

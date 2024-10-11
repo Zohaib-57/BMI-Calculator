@@ -29,9 +29,19 @@ input{
     border: 1px solid black;
     border-radius: 3px;
 }
-#intro{
+#name,#age{
     padding: 7px;
     width: 180px;
+}
+#btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    width:120px;
+    padding: 7px;
+    margin: 20px;
 }
 #input-values{
     display: flex;
@@ -41,4 +51,8 @@ input{
 .value{
     width: 80px;
     padding: 5px;
+}
+#output{
+    text-align: center;
+    margin: 20px;
 }
