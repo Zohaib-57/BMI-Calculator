@@ -1,58 +1,99 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #c9c6c6;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 10px;
 }
-#container{
-    margin-top:150px ;
-    border: 2px solid black;
+
+#container {
+    background-color: #adadad;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    width: calc(100% - 20px);
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#name, #age {
+    width: calc(100% - 20px);
+}
+
+#input-values {
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    margin-bottom: 20px;
 }
-h2{
-    text-align: center;
+
+button {
+    background-color: #1b2b1b;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
 }
-#intro-section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
+button:hover {
+    background-color: #45a049;
 }
-input{
-    margin:10px;
-    border: 1px solid black;
-    border-radius: 3px;
+
+#output {
+    margin-top: 20px;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
 }
-#name,#age{
-    padding: 7px;
-    width: 180px;
+#output p {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
 }
-#btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-button{
-    width:120px;
-    padding: 7px;
-    margin: 20px;
-}
-#input-values{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.value{
-    width: 80px;
-    padding: 5px;
-}
-#output{
-    text-align: center;
-    margin: 20px;
+@media only screen and (max-width: 600px) {
+    #container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input, button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #output p {
+        font-size: 16px;
+    }
+    #input-values {
+        flex-direction: column;
+    }
 }
