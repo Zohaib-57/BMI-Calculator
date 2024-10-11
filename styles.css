@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#container{
+    margin-top:150px ;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+h2{
+    text-align: center;
+}
+#intro-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+input{
+    margin:10px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+#intro{
+    padding: 7px;
+    width: 180px;
+}
+#input-values{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.value{
+    width: 80px;
+    padding: 5px;
+}
