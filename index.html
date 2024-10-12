@@ -7,30 +7,32 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- section to take the intro strings -->
     <div id="container">
         <h2>BMI Calculator</h2>
         <div id="intro-section">
             <input type="text" id="name" placeholder="Enter name"><br>
             <input type="text" id="age" placeholder="Enter age">
         </div>
-
+<!-- section to take the height and weight -->
         <div id="input-values">
             Height (cm):
             <input type="number" id="height" class="value" placeholder="cm">
             Weight (kg):
             <input type="number" id="weight" class="value" placeholder="kg">
         </div>
+        <!-- button  to perform the functionality of calculating the BMI -->
         <div id="btn">
             <button onclick="calculateBMI()">Calculate BMI</button>
         </div>
-
+<!-- section to take the output values -->
         <div id="output">
             <p id="result-name">Name: ...</p>
             <p id="result-bmi">BMI: ...</p>
             <p id="result-category">Category: ...</p>
         </div>
     </div>
-
+<!-- external link of javascript -->
     <script src="script.js"></script>
 </body>
 </html>
